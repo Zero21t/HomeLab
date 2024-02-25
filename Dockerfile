@@ -1,9 +1,9 @@
 FROM ubuntu:22.04
 
 #dependencies
-RUN apt-get update
-RUN apt install curl
-RUN apt install net-tools
+RUN apt-get update -y
+RUN apt install curl -y
+RUN apt install net-tools -y
 
 #casaOS
 RUN curl -fsSL https://get.casaos.io | sudo bash
