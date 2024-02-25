@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 #dependencies
-RUN apt install update
+RUN apt-get update
 RUN apt install curl
 RUN apt install net-tools
 
