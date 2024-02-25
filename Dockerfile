@@ -6,7 +6,7 @@ RUN apt install curl -y
 RUN apt install net-tools -y
 
 #casaOS
-RUN sudo curl -fsSL https://get.casaos.io
+RUN curl -fsSL https://get.casaos.io | bash
 RUN sudo systemctl enable casaOS.service
 
 CMD [ "systemctl status casaOS.service" ]
