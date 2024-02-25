@@ -20,12 +20,12 @@ This Dockerfile provides a way to create a casaOS image using Docker. casaOS is 
 
 3. **Build the Docker image** using the provided Dockerfile:
     ```bash
-    docker build -t casaos-image .
+    sudo docker build -t casaos-image .
     ```
 
 4. Once the image is built successfully, you can **run it as a container**:
     ```bash
-    docker run --name casaos-container --restart unless-stopped -d casaos-image
+    sudo docker run --name casaos-container --restart unless-stopped -d casaos-image
     ```
 
     This command will start a Docker container running casaOS and start on restart of machine.
