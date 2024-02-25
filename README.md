@@ -15,7 +15,7 @@ This Dockerfile provides a way to create a casaOS image using Docker. casaOS is 
 
 2. **Navigate to the directory** containing the Dockerfile:
     ```bash
-    cd repository
+    cd HomeLab
     ```
 
 3. **Build the Docker image** using the provided Dockerfile:
@@ -25,10 +25,10 @@ This Dockerfile provides a way to create a casaOS image using Docker. casaOS is 
 
 4. Once the image is built successfully, you can **run it as a container**:
     ```bash
-    docker run --name casaos-container casaos-image
+    docker run --name casaos-container --restart unless-stopped -d casaos-image
     ```
 
-    This command will start a Docker container running casaOS.
+    This command will start a Docker container running casaOS and start on restart of machine.
 
 ## Additional Information
 
