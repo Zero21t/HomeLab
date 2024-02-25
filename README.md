@@ -10,7 +10,7 @@ This Dockerfile provides a way to create a casaOS image using Docker. casaOS is 
 
 1. **Clone this repository** to your local machine:
     ```bash
-    git clone https://github.com/your/repository.git
+    git clone https://github.com/Zero21t/HomeLab.git
     ```
 
 2. **Navigate to the directory** containing the Dockerfile:
