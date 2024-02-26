@@ -1,8 +1,8 @@
-FROM ubuntu:22.04
+FROM ubuntu:Latest
 
 #dependencies
-RUN apt update -y
-RUN apt-get install -y apt-utils sudo
+RUN apt-get update && \
+    apt-get install -y apt-utils sudo curl
 
 #casaOS
 RUN curl -fsSL https://get.casaos.io | sudo bash
