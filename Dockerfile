@@ -1,10 +1,10 @@
-FROM ubuntu:Latest
+FROM ubuntu:22.04
 
 #dependencies
 RUN apt-get update && \
-    apt-get install -y apt-utils sudo curl
+    apt-get install -y apt-utils sudo
 
 #casaOS
-RUN curl -fsSL https://get.casaos.io | sudo bash
+RUN wget -qO- https://get.casaos.io | sudo bash
 
-CMD [ "systemctl status casaos" ]
+CMD [ "systemctl start casaos" ]
