@@ -7,4 +7,4 @@ RUN apt-get install -y apt-utils sudo
 #casaOS
 RUN curl -fsSL https://get.casaos.io | sudo bash
 
-CMD [ "systemct; status casaos" ]
+CMD [ "systemctl status casaos" ]
