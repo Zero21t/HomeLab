@@ -5,7 +5,6 @@ RUN apt update -y
 RUN apt-get install -y apt-utils
 
 #casaOS
-RUN curl -fsSL https://get.casaos.io
-RUN systemctl start casaos.service
+RUN curl -fsSL https://get.casaos.io | bash
 
-CMD [ "systemctl status casaOS.service" ]
+CMD [ "systemctl", "status", "casaOS.service" ]
