@@ -1,34 +1,43 @@
-# casaOS Dockerfile
+# casaOS Installation
 
-This Dockerfile provides a way to create a casaOS image using Docker. casaOS is a hypothetical operating system, and this Dockerfile simulates its installation and setup process.
+This repository follows my personal steps and installation script for setting up and running CasaOS on a fresh new installation of ubuntu.
 
 ## Prerequisites
 
 - Docker installed on your system.
-
-## Usage
 
 1. **Clone this repository** to your local machine:
     ```bash
     git clone https://github.com/Zero21t/HomeLab.git
     ```
 
-2. **Navigate to the directory** containing the Dockerfile:
+2. **Navigate to the directory** with installation scripts:
     ```bash
     cd HomeLab
     ```
 
-3. **Build the Docker image** using the provided Dockerfile:
+3. **modify and run Tool Script** :
     ```bash
-    sudo docker build -t casaos-image .
+    sudo chmod +x Tools.sh
+    ./Tools.sh
     ```
 
-4. Once the image is built successfully, you can **run it as a container**:
+## Usage
+
+- Install CasaOS
+
+1. **Modify** permision to run casaOS script:
     ```bash
-    sudo docker run --name casaos-container --restart unless-stopped -d casaos-image
+    sudo chmod +x CasaOS.sh
     ```
 
-    This command will start a Docker container running casaOS and start on restart of machine.
+2. **Run** casaOS script:
+    ```bash
+    ./CasaOS.sh
+    ```
+- Now follow CasaOS Installation
+
+
 
 ## Additional Information
 
@@ -37,8 +46,3 @@ This Dockerfile provides a way to create a casaOS image using Docker. casaOS is 
   - casaOS is installed by fetching the installation script using `curl` and then running it with `bash`.
   - After installation, the casaOS service is enabled using `systemctl`.
 - **Default Command:** The default command when running the container is to display the status of the casaOS service.
-
-## Notes
-
-- This Dockerfile is for demonstration purposes and simulates the installation process of casaOS. Adjustments may be needed for a real-world scenario.
-- Ensure that Docker is properly configured on your system to run Docker commands without sudo privileges.
