@@ -4,7 +4,8 @@ This repository follows my personal steps and installation script for setting up
 
 ## Prerequisites
 
-- Docker installed on your system.
+- Following step installs docker and tools that CasaOS will need 
+- skip if tools are preinstalled
 
 1. **Clone this repository** to your local machine:
     ```bash
