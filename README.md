@@ -27,15 +27,11 @@ This repository follows my personal steps and installation script for setting up
 
 - Install CasaOS
 
-1. **Modify** permision to run casaOS script:
+**CasaOS installation:**
     ```bash
-    sudo chmod +x CasaOS.sh
+    curl -fsSL https://get.casaos.io | sudo bash
     ```
 
-2. **Run** casaOS script:
-    ```bash
-    ./CasaOS.sh
-    ```
 - Now follow CasaOS Installation
 
 
