@@ -27,7 +27,7 @@ This repository follows my personal steps and installation script for setting up
 
 - Install CasaOS
 
-**CasaOS installation:**
+1. **CasaOS installation:**
     ```bash
     curl -fsSL https://get.casaos.io | sudo bash
     ```
